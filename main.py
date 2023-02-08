@@ -1,4 +1,4 @@
 import scaper
 import data_merger
 
-scaper.table2()
+data_merger.run()
