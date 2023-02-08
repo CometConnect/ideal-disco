@@ -69,14 +69,14 @@ def table2():
     @dataclass
     class Data:
         name: str
-        constellation: str
-        right_ascension: str
-        declination: str
+        # constellation: str
+        # right_ascension: str
+        # declination: str
         distance: str
-        spectral_type: str
+        # spectral_type: str
         mass: str
         radius: str
-        discovery_year: str
+        # discovery_year: str
 
     soup = __init("List of brown dwarfs")
     rows = __strip(list(soup.find_all('tbody')[7].children))
@@ -88,14 +88,9 @@ def table2():
         try:
             data.append(Data(
                 __parse(res[0].find('a')),
-                __parse(res[1].find('a')),
-                __parse(res[2]),
-                __parse(res[3]),
-                __parse(res[4]),
                 __parse(res[5]),
-                __parse(res[6]),
                 __parse(res[7]),
-                __parse(res[8])
+                __parse(res[8]),
             ))
         except:
             pass
