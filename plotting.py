@@ -2,7 +2,7 @@ from plotly.express import scatter
 from pandas import read_csv, DataFrame
 
 def run():
-  df = read_csv('gravity.csv')
+  df = read_csv('csv/gravity.csv')
   
   print("a> mass and radius")
   print("b> mass and gravity")

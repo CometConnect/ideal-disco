@@ -7,7 +7,7 @@ def run():
   gravity = []
   G = 6.674 * pow(10, -11)
 
-  df = read_csv('cleaned.csv')
+  df = read_csv('csv/cleaned.csv')
   for cell in df.iloc:
     try:
       if cell.notnull()['mass'] and cell.notnull()['radius']:
@@ -22,4 +22,4 @@ def run():
 
   df.drop(columns=['Unnamed: 0'], inplace=True)
   df['gravity'] = gravity
-  df.to_csv("gravity.csv")
+  df.to_csv("csv/gravity.csv")

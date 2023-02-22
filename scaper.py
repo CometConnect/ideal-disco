@@ -27,7 +27,7 @@ def __save(data: list, filename: str):
     DataFrame(data, columns=list(filter(
         lambda x: not x.startswith('__'),
         dir(data[0])
-    ))).to_csv(f"{filename}.csv")
+    ))).to_csv(f"csv/{filename}.csv")
 
 
 def table1():
