@@ -1,7 +1,7 @@
 # import scaper
 # import data_merger
 # import data_cleaner
-import gravity
-# import plotting
+# import gravity
+import plotting
 
-gravity.run()
+plotting.run()
