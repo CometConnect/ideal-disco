@@ -1,4 +1,5 @@
-import scaper
-import data_merger
+# import scaper
+# import data_merger
+import data_cleaner
 
-data_merger.run()
+data_cleaner.run()
