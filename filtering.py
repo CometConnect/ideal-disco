@@ -25,7 +25,7 @@ def gravity_check(df: DataFrame) -> DataFrame:
       if gravity_float < 0:
         # unknown gravity
         continue
-      if gravity_float < 100:
+      if gravity_float <= 150 and gravity_float >= 300:
         output = concat([output, cell.to_frame().T], ignore_index=True)
 
     except:
